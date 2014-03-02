@@ -21,6 +21,11 @@
 		5B7E59D518C3BC6E0081BE3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7E59B718C3BC6E0081BE3A /* UIKit.framework */; };
 		5B7E59DD18C3BC6E0081BE3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E59DB18C3BC6E0081BE3A /* InfoPlist.strings */; };
 		5B7E59DF18C3BC6E0081BE3A /* KataBowlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E59DE18C3BC6E0081BE3A /* KataBowlingTests.m */; };
+		5B7E59EB18C3BE510081BE3A /* Roll.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E59EA18C3BE510081BE3A /* Roll.m */; };
+		5B7E59EF18C3BF1F0081BE3A /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E59EE18C3BF1F0081BE3A /* Game.m */; };
+		5B7E59F318C3DB490081BE3A /* bowling.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E59F018C3DB490081BE3A /* bowling.png */; };
+		5B7E59F418C3DB490081BE3A /* bowling@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E59F118C3DB490081BE3A /* bowling@2x.png */; };
+		5B7E59F518C3DB490081BE3A /* bowling120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E59F218C3DB490081BE3A /* bowling120x120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		5B7E59DA18C3BC6E0081BE3A /* KataBowlingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KataBowlingTests-Info.plist"; sourceTree = "<group>"; };
 		5B7E59DC18C3BC6E0081BE3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5B7E59DE18C3BC6E0081BE3A /* KataBowlingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KataBowlingTests.m; sourceTree = "<group>"; };
+		5B7E59E918C3BE510081BE3A /* Roll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roll.h; sourceTree = "<group>"; };
+		5B7E59EA18C3BE510081BE3A /* Roll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roll.m; sourceTree = "<group>"; };
+		5B7E59ED18C3BF1F0081BE3A /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		5B7E59EE18C3BF1F0081BE3A /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		5B7E59F018C3DB490081BE3A /* bowling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowling.png; sourceTree = "<group>"; };
+		5B7E59F118C3DB490081BE3A /* bowling@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bowling@2x.png"; sourceTree = "<group>"; };
+		5B7E59F218C3DB490081BE3A /* bowling120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bowling120x120.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,8 @@
 				5B7E59C818C3BC6E0081BE3A /* ViewController.h */,
 				5B7E59C918C3BC6E0081BE3A /* ViewController.m */,
 				5B7E59CB18C3BC6E0081BE3A /* Images.xcassets */,
+				5B7E59EC18C3BEE00081BE3A /* controller */,
+				5B7E59E818C3BC930081BE3A /* model */,
 				5B7E59BA18C3BC6E0081BE3A /* Supporting Files */,
 			);
 			path = KataBowling;
@@ -126,6 +140,9 @@
 		5B7E59BA18C3BC6E0081BE3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B7E59F018C3DB490081BE3A /* bowling.png */,
+				5B7E59F118C3DB490081BE3A /* bowling@2x.png */,
+				5B7E59F218C3DB490081BE3A /* bowling120x120.png */,
 				5B7E59BB18C3BC6E0081BE3A /* KataBowling-Info.plist */,
 				5B7E59BC18C3BC6E0081BE3A /* InfoPlist.strings */,
 				5B7E59BF18C3BC6E0081BE3A /* main.m */,
@@ -150,6 +167,24 @@
 				5B7E59DB18C3BC6E0081BE3A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B7E59E818C3BC930081BE3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E59E918C3BE510081BE3A /* Roll.h */,
+				5B7E59EA18C3BE510081BE3A /* Roll.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		5B7E59EC18C3BEE00081BE3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E59ED18C3BF1F0081BE3A /* Game.h */,
+				5B7E59EE18C3BF1F0081BE3A /* Game.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +234,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Fahied;
 				TargetAttributes = {
+					5B7E59AF18C3BC6D0081BE3A = {
+						DevelopmentTeam = 3EG2HXS2JV;
+					};
 					5B7E59D018C3BC6E0081BE3A = {
 						TestTargetID = 5B7E59AF18C3BC6D0081BE3A;
 					};
@@ -228,9 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7E59F418C3DB490081BE3A /* bowling@2x.png in Resources */,
+				5B7E59F318C3DB490081BE3A /* bowling.png in Resources */,
 				5B7E59CC18C3BC6E0081BE3A /* Images.xcassets in Resources */,
 				5B7E59BE18C3BC6E0081BE3A /* InfoPlist.strings in Resources */,
 				5B7E59C718C3BC6E0081BE3A /* Main.storyboard in Resources */,
+				5B7E59F518C3DB490081BE3A /* bowling120x120.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7E59EF18C3BF1F0081BE3A /* Game.m in Sources */,
 				5B7E59CA18C3BC6E0081BE3A /* ViewController.m in Sources */,
 				5B7E59C418C3BC6E0081BE3A /* AppDelegate.m in Sources */,
+				5B7E59EB18C3BE510081BE3A /* Roll.m in Sources */,
 				5B7E59C018C3BC6E0081BE3A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,10 +421,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KataBowling/KataBowling-Prefix.pch";
 				INFOPLIST_FILE = "KataBowling/KataBowling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +437,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KataBowling/KataBowling-Prefix.pch";
 				INFOPLIST_FILE = "KataBowling/KataBowling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,6 +490,74 @@
 			};
 			name = Release;
 		};
+		5B7E59F618C3E0F60081BE3A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		5B7E59F718C3E0F60081BE3A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KataBowling/KataBowling-Prefix.pch";
+				INFOPLIST_FILE = "KataBowling/KataBowling-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		5B7E59F818C3E0F60081BE3A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KataBowling.app/KataBowling";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KataBowling/KataBowling-Prefix.pch";
+				INFOPLIST_FILE = "KataBowlingTests/KataBowlingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +566,7 @@
 			buildConfigurations = (
 				5B7E59E018C3BC6E0081BE3A /* Debug */,
 				5B7E59E118C3BC6E0081BE3A /* Release */,
+				5B7E59F618C3E0F60081BE3A /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -458,6 +576,7 @@
 			buildConfigurations = (
 				5B7E59E318C3BC6E0081BE3A /* Debug */,
 				5B7E59E418C3BC6E0081BE3A /* Release */,
+				5B7E59F718C3E0F60081BE3A /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
@@ -466,6 +585,7 @@
 			buildConfigurations = (
 				5B7E59E618C3BC6E0081BE3A /* Debug */,
 				5B7E59E718C3BC6E0081BE3A /* Release */,
+				5B7E59F818C3E0F60081BE3A /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
